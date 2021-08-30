@@ -1,0 +1,7 @@
+# Required Libraries for ytps
+
+rich
+youtube-search-python
+youtube-search
+
+# Made by NoobScience

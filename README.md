@@ -2,6 +2,23 @@
 YouTube Terminal Player and Search is a simple tools to search [youtube]('https://youtube.com') from the terminal. It also gives you the url, so you can use [mpv]('https://mpv.io') to watch the video. 
 This bypasses the need to use youtube at all. Also, ytps doesn't use the youtube REST API, it only uses programs that scrape youtube. ytps uses many modules that scrap youtube.
 *ytps doesn't on it's own provides no results. It only uses the below modules and compiles them to look beautiful and nice*.
+
+### Installation
+
+Pip Install
+```bash
+pip install ytps
+```
+
+Directly from Repository
+```bash
+git clone https://github.com/newtoallofthis123/ytps.git
+```
+
+```bash
+pip install -r requirements.txt
+```
+
 ## 3rd party modules used in ytps:
 *youtube-search-python*: [website]('https://github.com/alexmercerind/youtube-search-python') ; 
 *youtube-search*: [website]('https://github.com/joetats/youtube_search') ; 
@@ -15,7 +32,7 @@ This bypasses the need to use youtube at all. Also, ytps doesn't use the youtube
 ytps "youtube_search_term"
 ```
 
-2. Open latest video in mpv or vlc
+2. Open latest video in mpv
 ```bash
 ytps -o "youtube_search_term"
 ```
@@ -25,14 +42,34 @@ ytps -o "youtube_search_term"
 ytps -l "youtube_search_term"
 ```
 
-4. About
+4. Play Url or Most Relevant Result based on string
 ```bash
-ytps -a "Any String"
+ytps -p "youtube_search_term"
 ```
 
-5. Help
+5. Channel Info
+```bash
+ytps -c "channel_name"
+```
+
+6. Video Info
+```bash
+ytps --info "video_url"
+```
+
+7. About
+```bash
+ytps -a "any_string"
+```
+
+8. Help
 ```bash
 ytps --help
+```
+
+9. Version
+```bash
+ytps --version
 ```
 
 ## License 
