@@ -4,32 +4,101 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/icon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles.css">
-    <title>YTPS - Youtube Terminal Play And Search</title>
+    <link rel="stylesheet" href="bg.css">
+    <link rel="shortcut icon" href="https://newtoallofthis123.github.io/About/assets/icons/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400&family=Josefin+Sans:wght@400&family=Open+Sans&family=PT+Sans&family=Poppins:wght@$00&family=Roboto+Mono&family=Roboto:wght@100;300;400&family=Supermercado+One&display=swap" rel="stylesheet">
+    <title>YTPS | 📺 YouTube Terminal Search and Play</title>
 </head>
 <body>
-    <video autoplay loop>
-        <source src="assets/videos/bg.mp4" type="video/mp4">
-        <source src="assets/bg.ogg" type="video/ogg">
-    </video>
-    <div class="main_div">
-        <h1 class="title">YTPS</h1>
-        <h1 class="sub_heading">Youtube Terminal Play And Search</h1>
-        <div class="iframe">
-            <iframe width="840" height="472" src="https://www.youtube-nocookie.com/embed/Y7MZqqcqWs4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <a href="https://newtoallofthis123.github.io/About" style="text-decoration: none;">
+        <div class="nav">
+            <img src="https://github.com/newtoallofthis123/Assets/raw/main/Image/noobscience.png" width="52">
+            <p class="title">NoobScience</p>
+        </div>
+    </a>
+    <div style="margin: 3%;">
+        <div class="hero">
+            <h2 class="heading">YTPS</h2>
+        </div>
+        <div class="hero">
+            <p class="sub_heading">The New way to Consume YouTube</p>
+        </div>
+        <div class="hero">
+            <button class="main_btn">
+                <a href="#about" class="btn_link"><i class="bi bi-arrow-down"></i> See More</a>
+            </button>
         </div>
     </div>
-    <a href="https://newtoallofthis123.github.io/About" class="footer_title">&copy NoobScience</a>
-    <a href="#credits" class="footer_attribute" id="modal_btn" >Credits</a>
-    <div class="modal_popup" id="credits">
-        <div class="modal_content">
-            <p class="attribution_text">Background Video by <a href="https://www.pexels.com/@kelly-lacy-1179532" class="attribution_link">Kelly Lacy</a> on <a href="https://www.pexels.com/video/rain-water-puddle-in-the-bridge-3999435/" class="attribution_link">Pexels</a></p> <br>
-            <p class="attribution_text">Video Hosted on <a href="https://youtube.com" class="attribution_link">Youtube</a></p> <br>
-            <p class="attribution_text">Hosted on <a href="https://pages.github.com/" class="attribution_link">Github Pages</a></p>
-            <span class="close_modal"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg></span>    
+    <div data-aos="flip-left" id="about">
+        <div class="about_div">
+            <div class="about_text">
+                <p class="sub_heading" style="font-size: 44px; color: rgb(255, 255, 255);">YouTube Terminal Search and Play</p>
+                <p class="text">
+                    Search YouTube from the Convenience of your terminal.
+                    YTPS is a great resource for anyone who loves to do stuff from the terminal. 
+                    YTPS combines the power of several good youtube cli tools from the open source community to give you a smooth and neat experience that is quite functional as well...
+                </p>
+                <button class="main_btn">
+                    <a href="#download" class="btn_link"><i class="bi bi-download"></i> Download</a>
+                </button>
+            </div>
+            <div class="about_img">
+                <img src="https://newtoallofthis123.github.io/About/assets/images/ytps.gif" alt="" width="560" height="320">
+            </div>
         </div>
     </div>
-    <script src="brain.js"></script>
+    <div data-aos="fade-up" id="download">
+        <div class="download_div">
+            <div class="download_text">
+                <p class="sub_heading" style="font-size: 44px; color: rgb(255, 255, 255);">The Nerd Way to Download</p>
+                <p class="text">
+                    Okay So as a pure nerd, this is my recommendation for you, install python, if you don't have it already and 
+                    just tell the good guy pip to install YTPS for you! He is such a great guy, does all the work for you can you can just run me from the terminal.
+                </p>
+                <div class="code_span">
+                    <p class="code">$ pip install ytps</p>
+                </div>
+            </div>
+            <div class="download_img">
+                <img src="assets/imports.png" alt="" width="560" height="320">
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center; top: 50%; left: 50%;">
+        <h2 class="heading">And For You Pure Hearts...</h2>
+        <button class="main_btn">
+            <a href="https://github.com/newtoallofthis123/ytps" class="btn_link"><i class="bi bi-github"></i> Download from GitHub</a>
+        </button>
+    </div>
+    <div class="footer">
+        <p class="text" style="text-align: center;">&copy NoobScience ⚡</p>
+    </div>
 </body>
+<script>
+    AOS.init();
+    Toastify({
+        text: "Follow Me on Twitter for Latest Updates",
+        duration: 30000,
+        destination: "https://twitter.com/noobscience1",
+        newWindow: true,
+        close: true,
+        gravity: "bottom", // `top` or `bottom`
+        position: "right", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        avatar: "https://newtoallofthis123.github.io/tree/assets/images/twitter.svg",
+        style: {
+            background: "linear-gradient(to right, #0e2a47, #0e2a36",
+            fontFamily: "Helvetica, sans-serif",
+        },
+        onClick: function(){} // Callback after click
+    }).showToast();
+</script>
 </html>

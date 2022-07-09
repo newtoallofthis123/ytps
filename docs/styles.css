@@ -1,139 +1,107 @@
-@font-face {
-    font-family: 'Permanent Marker';
-    src: url(assets/fonts/Permanent_Marker/PermanentMarker-Regular.ttf);
-}
-
-* {
-    margin: 0;
-}
-
-video{
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-}
-
-.main_div{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    /* background-color: rgba(184, 164, 164, 0.253); */
-    transform: translate(-50%, -50%);
-    padding: 40px;
-    border-radius: 20px;
-}
-
 .title{
-    font-family: 'Permanent Marker';
+    font-size: 38px;
+    padding-left: 12px;
+    font-family: JetBrains Mono, 'Courier New', Courier, monospace;
+    color: rgb(222, 230, 219);
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding-top: 12px;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heading{
     font-size: 48px;
-    color: rgb(255, 255, 255);
-    text-align: center;
-}
-
-.iframe{
-    text-align: center;
-}
-
-iframe{
-    border-radius: 20px;
+    font-family: Helvetica, sans-serif;
+    color: rgb(222, 230, 219);
 }
 
 .sub_heading{
-    font-family: 'Permanent Marker';
-    font-size: 36px;
-    color: rgb(255, 255, 255);
-    text-align: center;
+    font-size: 32px;
+    font-family: Helvetica, sans-serif;
+    color: rgb(222, 230, 219);
 }
 
-.footer_title{
-    position: fixed;
-    color: rgba(168, 154, 154, 0.418);
-    bottom: 0;
-    font-family: Pacifico, cursive;
+.main_btn{
+    padding: 12px;
+    border-width: 0px;
+    border-radius: 3.2rem;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: rgb(37, 241, 129);
+    margin-top: 12px;
+}
+
+.btn_link{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 18px;
     text-decoration: none;
-    transition-delay: 40ms;
-    transition-duration: 1s;
+    display: block;
+    color: rgb(41, 38, 38);
 }
 
-.footer_title:hover{
-    color: white;
+.text{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: rgb(247, 236, 236);
 }
 
-.footer_attribute{
-    position: fixed;
-    color: rgba(168, 154, 154, 0.418);
-    bottom: 1%;
-    right: 0;
-    font-family: 'Cascadia Code','Courier New', Courier, monospace;
-    font-size: 16px;
-    text-decoration: none;
-    transition-delay: 40ms;
-    transition-duration: 1s;
+.about_div{
+    display: flex;
+    margin-top: 8%;
 }
 
-.footer_attribute:hover{
-    color: white;
+.about_img{
+    padding: 5%;
+    margin-top: 12px;
 }
 
-.modal_popup{
-    display: none; 
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-}
-.content_modal {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
-.close_modal {
-    color: #aaa;
-    font-size: 28px;
-    margin-left: 90%;
-}  
-.close_modal:hover, .close_modal:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
+.about_text{
+    padding: 6%;
 }
 
-.attribution_link{
-    display: inline;
-    /* position: fixed; */
-    color: rgb(187, 245, 165);
-    /* bottom: 1%; */
-    /* right: 0; */
-    font-family: 'Cascadia Code','Courier New', Courier, monospace;
-    font-size: 16px;
-    text-decoration: none;
-    transition-delay: 40ms;
-    transition-duration: 1s;
+.download_div{
+    display: flex;
+    margin-top: 8%;
 }
 
-.attribution_link:hover{
-    color: rgb(119, 247, 45);
+.download_img{
+    padding: 5%;
+    margin-top: 12px;
 }
 
-.attribution_text{
-    display: inline;
-    /* position: fixed; */
-    color: rgb(223, 206, 206);
-    /* bottom: 1%; */
-    /* right: 0; */
-    font-family: 'Cascadia Code','Courier New', Courier, monospace;
-    font-size: 16px;
-    text-decoration: none;
-    transition-delay: 40ms;
-    transition-duration: 1s;
+.download_text{
+    padding: 6%;
+}
+
+.code{
+    font-size: 18px;
+    font-family: JetBrains Mono, 'Courier New', Courier, monospace;
+    color: #fff;
+    padding-left: 1.2rem;
+}
+
+.code_span{
+    background-color: rgb(39, 37, 37);
+    padding: 1%;
+    padding-right: 0px;
+    border-radius: 1.2rem;
+}
+
+.footer{
+    background: linear-gradient(to right, rgb(63, 61, 61), rgb(44, 46, 46));
+    padding: 1%;
+    margin-top: 2%;
+    border-style: solid;
+    border-color: rgb(231, 231, 226);
+    border-radius: 12px;
+    border-width: 2%;
 }
