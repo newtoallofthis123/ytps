@@ -5,7 +5,7 @@ This bypasses the need to use youtube at all. Also, ytps doesn't use the youtube
 
 ### Installation
 
-Pip Install
+[Pip](https://pypi.org/project/ytps) Install
 ```bash
 pip install ytps
 ```
